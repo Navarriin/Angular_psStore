@@ -1,0 +1,74 @@
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+
+  justify-content: space-between;
+  height: 60px;
+}
+
+.icon-page {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.icon-page > img {
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.icon-page > h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.icon-page > h3 > span {
+  font-weight: bold;
+  margin-right: 0.4rem;
+}
+
+.list-page {
+  display: flex;
+  align-items: center;
+}
+
+.list-page > ul {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.list-page > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.icons-right {
+  margin-left: 5rem;
+}
+
+.icons-right > ul {
+  margin: 0.2rem 0.3rem 0 0;
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.icons-right > ul > li {
+  padding: 0.4rem 0.5rem;
+  background-color: rgba(41, 40, 40, 0.6);
+  margin: 1px 1px 0 0;
+}
+
+.icons-right > ul > li:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.icons-right > ul > li:last-child {
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
