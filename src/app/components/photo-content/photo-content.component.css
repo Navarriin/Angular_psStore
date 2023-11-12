@@ -1,0 +1,12 @@
+.img > img {
+  height: 800px;
+  width: 650px;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin: 2.6rem 2.6rem;
+  transition: transform 0.1s ease-in;
+}
+
+.img > img:hover {
+  transform: scale(1.01);
+}

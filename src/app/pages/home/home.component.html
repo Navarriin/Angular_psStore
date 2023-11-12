@@ -3,14 +3,8 @@
 </header>
 <main>
     <div class="cards">
-        <div>
-            <app-big-card id="1"></app-big-card>
-        </div>
-        <div>
-            <app-big-card id="2"></app-big-card>
-        </div>
-        <div>
-            <app-big-card id="3"></app-big-card>
+        <div *ngFor="let id of ids">
+            <app-big-card id="{{ id }}"></app-big-card>
         </div>
     </div>
 </main>
