@@ -22,7 +22,7 @@ export class DescriptionsComponent {
   }
 
   setValuesToComponent(id: string | null): void {
-    const result = dataFake.filter((value) => value.id === this.id)[0];
+    const result = dataFake.filter((value) => value.id === id)[0];
     this.title = result.title;
     this.descriptions = result.description;
     this.content = result.content;

@@ -14,15 +14,14 @@ export class BigCardComponent {
   protected content: string = '';
   protected value: string = '';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => this.id === value.get('id'));
     this.setValuesToComponent(this.id);
   }
 
   setValuesToComponent(id: string | null): void {
-    const result = dataFake.filter((value) => value.id === this.id)[0];
+    const result = dataFake.filter((value) => value.id === id)[0];
     this.photoCover = result.photo;
     this.title = result.title;
     this.content = result.content;
