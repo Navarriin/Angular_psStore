@@ -17,7 +17,7 @@ export class DescriptionsComponent {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => value.get('id'));
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
     this.setValuesToComponent(this.id);
   }
 

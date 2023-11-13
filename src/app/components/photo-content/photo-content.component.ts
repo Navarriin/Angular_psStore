@@ -8,13 +8,13 @@ import { dataFake } from 'src/app/data/dataFake';
   styleUrls: ['./photo-content.component.css'],
 })
 export class PhotoContentComponent {
-  @Input() id: string | null = '0';
+  private id: string | null = '0';
   protected photo: string = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => value.get('id'));
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
     this.setValuesToComponent(this.id);
   }
 
